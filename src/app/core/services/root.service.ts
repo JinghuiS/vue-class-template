@@ -5,8 +5,8 @@ import { HttpModule } from 'shared/http'
 import { StartupInit } from './startup'
 
 export const RootServices: Dependency[] = [
-  [TestService],
-  ...AuthModule,
-  ...HttpModule,
-  ...StartupInit
+    [TestService],
+    ...AuthModule,
+    ...HttpModule,
+    ...StartupInit
 ]

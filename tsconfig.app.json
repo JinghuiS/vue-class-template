@@ -10,6 +10,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "vdi-class": ["./src/app/shared/vdi-class/index.ts"],
+      "modal-class": ["./src/app/shared/modal-class/index.ts"],
       "shared/*": ["./src/app/shared/*"]
     }
   }

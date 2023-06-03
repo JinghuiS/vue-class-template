@@ -5,7 +5,7 @@ import { Observable } from 'rxjs'
 export const HTTP_INTERCEPTOR = createIdentifier<HttpInterceptor[]>('HTTP_INTERCEPTOR')
 
 export class NoopInterceptor implements HttpInterceptor {
-  intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    return next.handle(request)
-  }
+    intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
+        return next.handle(request)
+    }
 }

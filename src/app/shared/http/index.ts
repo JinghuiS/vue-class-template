@@ -7,17 +7,17 @@ import { CREATED_VUE_APP_EXECUTION } from 'vdi'
 export const HTTP_CLIENT = NgHttp
 
 export const HttpModule: Dependency[] = [
-  [
-    HTTP_INTERCEPTOR,
-    {
-      useClass: NoopInterceptor
-    }
-  ],
-  [NgHttp],
-  [
-    CREATED_VUE_APP_EXECUTION,
-    {
-      useClass: NgHttp
-    }
-  ]
+    [
+        HTTP_INTERCEPTOR,
+        {
+            useClass: NoopInterceptor
+        }
+    ],
+    [NgHttp],
+    [
+        CREATED_VUE_APP_EXECUTION,
+        {
+            useClass: NgHttp
+        }
+    ]
 ]

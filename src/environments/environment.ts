@@ -1,3 +1,3 @@
 export const environment = {
-    type: 'dev',
-};
+    type: 'dev'
+}

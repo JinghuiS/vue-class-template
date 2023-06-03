@@ -4,8 +4,8 @@ import { RootServices } from './root.service'
 import type { Injector } from '@wendellhu/redi'
 
 export function setupDI(instance: App) {
-  instance.use(vdi(RootServices))
-  const inject = getGlobalInjector(instance) as Injector
+    instance.use(vdi(RootServices))
+    const inject = getGlobalInjector(instance) as Injector
 
-  return inject
+    return inject
 }

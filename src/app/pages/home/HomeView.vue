@@ -1,7 +1,6 @@
 <template>
-  <div>{{ abc }}</div>
-  {{ environment.type }}
-  <button @click="abc++">add</button>
+    {{ environment.type }}
+    <button @click="modal.hide()">add</button>
 </template>
 <script lang="ts">
 import { HomeView } from './HomeView'

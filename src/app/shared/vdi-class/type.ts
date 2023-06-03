@@ -1,31 +1,37 @@
 export type onBeforeCreated = {
-  beforeCreated: () => void
+    beforeCreated: () => void
 }
 
 export type onCreated = {
-  created: () => void
+    created: () => void
 }
 
 export type onBeforeMounted = {
-  beforeMounted: () => void
+    beforeMounted: () => void
 }
 
 export type OnMounted = {
-  mounted: () => void
+    mounted: () => void
 }
 
 export type OnUnmounted = {
-  unmounted: () => void
+    unmounted: () => void
 }
 
 export type OnUpdated = {
-  updated: () => void
+    updated: () => void
 }
 
 export type OnDestroyed = {
-  destroyed: () => void
+    destroyed: () => void
 }
 
 export type VdiClassHooks = Partial<
-  onBeforeCreated & onCreated & onBeforeMounted & OnMounted & OnUnmounted & OnUpdated & OnDestroyed
+    onBeforeCreated &
+        onCreated &
+        onBeforeMounted &
+        OnMounted &
+        OnUnmounted &
+        OnUpdated &
+        OnDestroyed
 >
