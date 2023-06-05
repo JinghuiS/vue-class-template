@@ -4,7 +4,7 @@ import { VdiComponent, Dependency, type VdiClassHooks } from 'vdi-class'
 import { CreateModal, type ModalClass } from 'modal-class'
 import { environment } from '@/environments/environment'
 
-import Abc from './Abc.vue'
+import { Test } from './Test'
 
 @VdiComponent({})
 export class HomeView extends Vue implements VdiClassHooks {
@@ -12,8 +12,8 @@ export class HomeView extends Vue implements VdiClassHooks {
     testService!: TestService
     environment = environment
 
-    @CreateModal(Abc)
-    modal!: ModalClass<typeof Abc>
+    @CreateModal(Test, { name: 'test' })
+    modal!: ModalClass<typeof Test>
 
     mounted() {
         this.modal.show()

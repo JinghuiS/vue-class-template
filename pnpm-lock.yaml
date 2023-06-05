@@ -34,6 +34,12 @@ dependencies:
     version: 4.2.2(vue@3.3.4)
 
 devDependencies:
+  '@babel/plugin-proposal-class-properties':
+    specifier: ^7.18.6
+    version: 7.18.6(@babel/core@7.22.1)
+  '@babel/plugin-proposal-decorators':
+    specifier: ^7.22.3
+    version: 7.22.3(@babel/core@7.22.1)
   '@rushstack/eslint-patch':
     specifier: ^1.2.0
     version: 1.3.0
@@ -326,6 +332,45 @@ packages:
     hasBin: true
     dependencies:
       '@babel/types': 7.22.4
+
+  /@babel/plugin-proposal-class-properties@7.18.6(@babel/core@7.22.1):
+    resolution: {integrity: sha512-cumfXOF0+nzZrrN8Rf0t7M+tF6sZc7vhQwYQck9q1/5w2OExlD+b4v4RpMJFaV1Z7WcDRgO6FqvxqxGlwo+RHQ==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.22.1
+      '@babel/helper-create-class-features-plugin': 7.22.1(@babel/core@7.22.1)
+      '@babel/helper-plugin-utils': 7.21.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@babel/plugin-proposal-decorators@7.22.3(@babel/core@7.22.1):
+    resolution: {integrity: sha512-XjTKH3sHr6pPqG+hR1NCdVupwiosfdKM2oSMyKQVQ5Bym9l/p7BuLAqT5U32zZzRCfPq/TPRPzMiiTE9bOXU4w==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.22.1
+      '@babel/helper-create-class-features-plugin': 7.22.1(@babel/core@7.22.1)
+      '@babel/helper-plugin-utils': 7.21.5
+      '@babel/helper-replace-supers': 7.22.1
+      '@babel/helper-split-export-declaration': 7.18.6
+      '@babel/plugin-syntax-decorators': 7.22.3(@babel/core@7.22.1)
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@babel/plugin-syntax-decorators@7.22.3(@babel/core@7.22.1):
+    resolution: {integrity: sha512-R16Zuge73+8/nLcDjkIpyhi5wIbN7i7fiuLJR8yQX7vPAa/ltUKtd3iLbb4AgP5nrLi91HnNUNosELIGUGH1bg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.22.1
+      '@babel/helper-plugin-utils': 7.21.5
+    dev: true
 
   /@babel/plugin-syntax-jsx@7.21.4(@babel/core@7.22.1):
     resolution: {integrity: sha512-5hewiLct5OKyh6PLKEYaFclcqtIgCb6bmELouxjF6up5q3Sov7rOayW4RwhbaBL0dit8rA80GNfY+UuDp2mBbQ==}
