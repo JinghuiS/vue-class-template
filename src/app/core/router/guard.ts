@@ -8,8 +8,8 @@ import type { App } from 'vue'
 export function createGuard(instance: App, router: Router) {
     const inject = getGlobalInjector(instance) as Injector
 
-    inject.add(ROUTER_GUARD, { useClass: class NullGuard implements RouterGuardImplements {} })
-    inject.get<RouterGuardImplements>(ROUTER_GUARD, Quantity.MANY).map((item) => {
+    inject.add([ROUTER_GUARD, { useClass: class NullGuard implements RouterGuardImplements {} }])
+    inject.get(ROUTER_GUARD, Quantity.MANY).map((item) => {
         if (item.beforeEach) {
             router.beforeEach((...args) => {
                 item.beforeEach && item.beforeEach(...args)

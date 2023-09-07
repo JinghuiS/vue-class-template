@@ -1,16 +1,18 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json",
-  "include": [
-    "vite.config.*",
-    "vitest.config.*",
-    "cypress.config.*",
-    "playwright.config.*",
-    "script/**/*",
-    "environments.config.*"
-  ],
-  "compilerOptions": {
-    "composite": true,
-    "module": "ESNext",
-    "types": ["node"]
-  }
+    "extends": "@tsconfig/node18/tsconfig.json",
+    "include": [
+        "vite.config.*",
+        "vitest.config.*",
+        "cypress.config.*",
+        "nightwatch.conf.*",
+        "playwright.config.*",
+        "environments.config.ts",
+        "script/replacements.ts"
+    ],
+    "compilerOptions": {
+        "composite": true,
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "types": ["node"]
+    }
 }
