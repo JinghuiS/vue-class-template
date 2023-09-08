@@ -18,8 +18,8 @@ dependencies:
     specifier: ^7.8.1
     version: 7.8.1
   vdi:
-    specifier: ^1.6.0
-    version: 1.6.0
+    specifier: ^1.6.1
+    version: 1.6.1
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -3626,8 +3626,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vdi@1.6.0:
-    resolution: {integrity: sha512-p4rk76wcvnP0t6ct6LQxVGoqKySo57VfwDL9jKVqNzSKfylqE8M+i19pmwlbVXwC0HeAwxeG8N23kWNwcMIBFg==}
+  /vdi@1.6.1:
+    resolution: {integrity: sha512-I/s9UEgleC+Pku+oZMs+uroM2y9c7qHAJSGhVOj562JD6/XK8LtbsVqTPPTvHmEVWm2SGHuscEkF2ARml+Vj6w==}
     dependencies:
       '@wendellhu/redi': 0.12.7
       vue: 3.3.4
